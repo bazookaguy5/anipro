@@ -1,0 +1,11 @@
+Boruto__Naruto_Next_Generations||132
+Black_Clover_(TV)||109
+Dr._Stone||19
+Vinland_Saga||17
+Totsukuni_no_Shoujo||1
+Ahiru_no_Sora||7
+Mugen_no_Juunin__Immortal||7
+Beastars||5
+Boku_no_Hero_Academia_4th_Season||4
+Tenki_no_Ko||1
+Golden_Kamuy_OVA||3

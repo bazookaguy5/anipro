@@ -19,12 +19,12 @@ def data_export(data, type, filename):
 	# For Dictionaries
 	if type == 'dict':
 		for key, val in zip(data.keys(), data.values()):
-			output_string += key + "||" + str(val) + "}+{"
-		output_string = output_string[:-3]
+			output_string += key + "||" + str(val) + "\n"
+		output_string = output_string[:-1]
 
 	# For Lists
 	elif type == 'list':
-		output_string = "||".join(data)
+		output_string = "\n".join(data)
 
 	file.write(output_string)
 	file.close()
@@ -44,7 +44,7 @@ def data_import(type, filename):
 			return {}
 		else:
 			output_dict = {}
-			pairs = file_data.split("}+{")
+			pairs = file_data.split("\n")
 			for pair in pairs:
 				key_value = pair.split("||")
 				output_dict[key_value[0]] = int(key_value[1])
@@ -53,5 +53,5 @@ def data_import(type, filename):
 
 	# For Lists
 	elif type == 'list':
-		output_list = file_data.split("||")
+		output_list = file_data.split("\n")
 		return output_list

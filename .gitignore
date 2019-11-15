@@ -1,3 +1,5 @@
 
 .vscode/launch.json
 __pycache__/*
+pref_anime.l
+black_list.l
